@@ -2,7 +2,7 @@
 title: "Fragrance Market Exploration"
 author: "Charlotte ZHU"
 output:
-  html_document:
+  rmdformats::robobook:
     theme: lumen
     code_folding: "hide"
     toc_depth: 3
