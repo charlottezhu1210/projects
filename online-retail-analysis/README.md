@@ -51,6 +51,19 @@ large wholesalers from dominating the clusters.
 
 <img src="figures/11_clustering_comparison.png" width="100%">
 
+**Can the silhouette go higher?** Only by giving up useful segments. I re-ran K-means for k = 2–8 under three
+feature treatments:
+
+| Features | k = 3 | k = 4 | **k = 5** | k = 6 |
+|---|---:|---:|---:|---:|
+| z(R, F, pseudo-log M), used | 0.532 | 0.530 | **0.465** | 0.395 |
+| z(log R, log F, pseudo-log M) | 0.431 | 0.337 | 0.358 | 0.347 |
+| Percentile ranks of R, F, M | 0.367 | 0.382 | 0.357 | 0.356 |
+
+The peak of about 0.53 at k = 3–4 comes from isolating 35 extreme customers, and it leaves the rest grouped too
+coarsely to act on. Log and rank transforms spread customers more evenly and score lower. RFM data is a continuum, so
+I use silhouette to compare algorithms on the same features, not as proof that customers naturally form five groups.
+
 ### Recommender: does collaborative filtering beat simple baselines?
 
 The task is to recommend **20 products** to each existing customer for their next purchase window.
