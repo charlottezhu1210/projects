@@ -1,0 +1,18 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# R leftovers
+.Rhistory
+.Rapp.history
+.RData
+.Rproj.user/
+
+# Office lock files
+~$*

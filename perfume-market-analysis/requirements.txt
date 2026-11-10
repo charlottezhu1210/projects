@@ -1,0 +1,6 @@
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.9
+networkx>=3.2
+adjustText>=1.1
+jupyterlab
